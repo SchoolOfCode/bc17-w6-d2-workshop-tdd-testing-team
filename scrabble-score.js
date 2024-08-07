@@ -30,14 +30,25 @@ export function calculateScrabbleScore(word) {
     'Z':10,
   };
   
+
   for (const letter of word.toUpperCase()){
+    // Check if the character is not a letter
+  {
+ if (!letterAndNumber,hasOwnProperty(letter))
+    //Error to come back with characters in alphabet to be used only.
+return throw console.error("Invalid character: Only letters allowed");}
+  }
+  
     score+=letterAndNumber[letter]
   }
   
   return score
-  
+
   
 }
+
+//Notes and questions on planning:
+//- 
 
 //  iterate through each letter in the word and perform an operation (add the corresponding number to the total score)
 
